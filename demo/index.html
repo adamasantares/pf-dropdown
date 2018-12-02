@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>PF Dropdown</title>
+    <script src="test-page.js"></script>
+    <link href="test-page.css" rel="stylesheet"/>
+</head>
+<body>
+
+    <h1>PF Dropdown</h1>
+
+    <form>
+        <h2>Dropdown without groups, callbacks and small plugin</h2>
+        <select id="select-1">
+            <option value="">---</option>
+            <option value="1" data-set='{"icon":"icon1.png"}'>Option 1</option>
+            <option value="2" data-set='{"icon":"icon2.png"}'>Option 2</option>
+            <option value="3" data-set='{"icon":"icon3.png"}'>Option 3</option>
+            <option value="4" data-set='{"icon":"icon4.png"}'>Option 4</option>
+            <option value="5" data-set='{"icon":"icon5.png"}'>Option 5</option>
+            <option value="6" data-set='{"icon":"icon6.png"}'>Option 6</option>
+            <option value="7" data-set='{"icon":"icon7.png"}'>Option 7</option>
+        </select>
+        <br>
+        <br>
+
+        <h2>Dropdown with groups but without plugin</h2>
+        <select id="select-2">
+            <optgroup label="group 1">
+                <option value="1" data-set='{"description":"The option 1 is the option with number 1"}'>Option 1</option>
+                <option value="2" data-set='{"description":"The option 2 is the option with number 2"}'>Option 2</option>
+            </optgroup>
+            <optgroup label="group 2">
+                <option value="3" data-set='{"description":"The option 3 is the option with number 3"}'>Option 3</option>
+                <option value="4" data-set='{"description":"The option 4 is the option with number 4"}'>Option 4</option>
+                <option value="5" data-set='{"description":"The option 5 is the option with number 5"}'>Option 5</option>
+            </optgroup>
+        </select>
+        <br>
+        <br>
+
+        <h2>Dropdown with remote source and plugin</h2>
+        <div class="margin-10-0">Selected value: <span id="select-3-value"></span></div>
+        <select id="select-3">
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+        </select>
+        <br>
+        <br>
+
+        <h2>Dropdown with autocomplete (by countries) and remote source</h2>
+        <div class="note">Use: $ node ./demo/autocomplete.js</div><br>
+        <select id="select-4"></select>
+
+        <h2>Dropdown with multiselect</h2>
+        <select id="select-5" multiple>
+            <option value="1">Option 1</option>
+            <option value="2" selected>Option 2</option>
+            <option value="3">Option 3</option>
+            <option value="4" selected>Option 4</option>
+            <option value="5" selected>Option 5</option>
+            <option value="6">Option 6</option>
+            <option value="7">Option 7</option>
+        </select>
+        <br>
+        <br>
+
+    </form>
+
+</body>
+</html>
